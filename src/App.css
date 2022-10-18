@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #020631;
+  background-color: #101012;
 }
 
 .app {
@@ -12,10 +12,12 @@ body {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
+  padding: 5rem;
 }
 
 .app .mainHeading h1 {
   text-align: center;
+  color: darkgreen;
 }
 
 .app h1,
@@ -26,18 +28,18 @@ h2 {
 .app .input {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
 }
 
 .app .input {
   margin-top: 0.8em;
-  width: 20em;
-  height: 2em;
+  width: 25em;
+  height: 3em;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 6px;
+  border-radius:5px;
   padding: 5px;
 }
 
@@ -57,14 +59,16 @@ h2 {
 }
 .app .todos {
   display: flex;
+  padding: 5px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: -5px;
 }
 .app .todos .todo {
   margin-top: 0.8em;
-  width: 20em;
-  height: 2em;
+  width: 25em;
+  min-height:3rem;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -79,9 +83,19 @@ h2 {
 }
 
 .app .todos .todo .left p {
-  margin-left: 3px;
+  margin-left:3px;
   font-size: medium;
   font-weight: 700;
   font-style: normal;
   color: grey;
+  margin-bottom: 0px;
+}
+.app .todos .todo .right i{
+  color: red;
+}
+#plus{
+  color: green;
+}
+.underline{
+  text-decoration: line-through;
 }
